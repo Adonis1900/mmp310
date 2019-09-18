@@ -46,7 +46,7 @@ function setup() {
     fill('black')
    
     fill('blue')
-    triangle(900, 60, 58, 20, 86, 75);
+    triangle(900, 60, 900, 20, 850, 120);
     
     noFill();
     strokeWeight(10.0);
