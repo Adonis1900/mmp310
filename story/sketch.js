@@ -139,6 +139,7 @@ function draw() {
         text("welcome to the stars!");
 
     } else if (scene == "partyroom") {
+        background('#FF69B4');
 
         //Character 1: Jared
         fill('tan');
