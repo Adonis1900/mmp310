@@ -37,7 +37,7 @@ function setup() {
 function draw() {
 
     background('darkBlue');
-
+    
     noFill();
     strokeWeight(10.0);
     strokeJoin(ROUND);
@@ -134,9 +134,14 @@ function draw() {
 
         fill("white");
         ellipse(random(width), random(height), 5, 5);
-        fill('black');
+        
+        fill("white");
         textSize(50);
-        text("welcome to the stars!");
+        text("welcome to the stars!",300,250);
+        text("Jared meets party cat for the first time!", 400, 400)
+        
+        
+        // Scene#2
 
     } else if (scene == "partyroom") {
         background('#FF69B4');
@@ -211,6 +216,85 @@ function draw() {
         ellipse(random(width), random(height), 5, 5);
         fill('black');
         textSize(50);
+        
+        fill("white");
+        textSize(50);
+        text("hey",300,250);
+        
+    } else if (scene == "classroom") {
+        background('AliceBlue');
+        
+        //Character 1: Jared
+        fill('tan');
+        ellipse(x, y, faceSize);
+        stroke('black');
+        fill('white')
+        ellipse(50, 180, 30, 50);
+        fill('green')
+        ellipse(50, 190, 20, 30);
+        fill('white')
+        ellipse(150, 180, 30, 50);
+        fill('green')
+        ellipse(150, 190, 20, 30);
+        //Character 2: Alien
+        fill('grey')
+        ellipse(catX, catY, 200, 200);
+
+        fill('white')
+        ellipse(900, 150, 60, 30);
+        fill('white')
+        ellipse(850, 200, 60, 30);
+        fill('white')
+        ellipse(950, 200, 60, 30);
+        fill('black')
+        ellipse();
+        fill('black');
+        fill('grey')
+        triangle(catX - 90, catY - 50,
+                 catX - 40, catY - 90,
+                 catX - 90, catY - 100);
+        
+        triangle(catX + 90, catY - 50,
+                 catX + 40, catY - 90,
+                 catX + 90, catY - 100);
+        
+        fill('black')
+        ellipse(catX - 60, catY, 20, 20);
+        ellipse(catX + 40, catY, 20, 20);
+        ellipse(catX - 10, catY - 50, 20, 20);
+        
+        //Jared's nose
+        noFill();
+        strokeWeight(10.0);
+        strokeJoin(ROUND);
+        beginShape();
+        vertex(x, y + 10);
+        vertex(x + 20, y - 10);
+        vertex(x, y - 20);
+        endShape();
+
+        //Jared mouth
+        arc(100, 240, 50, 50, 50, PI + QUARTER_PI);
+
+        //Cat aka Aliens nose.
+        fill('pink')
+        triangle(
+            catX - 40, 29 + catY,
+            40 + catX, 29 + catY,
+            catX, 50 + catY
+        );
+
+        //Cat Mouth.
+        noFill()
+        arc(catX - 25, catY + 60, 50, 40, 50, PI + QUARTER_PI);
+        arc(catX + 25, catY + 60, 50, 40, 50, PI + QUARTER_PI);
+
+
+        fill("white");
+        triangle(random(width), random(height), 20, 20);
+        fill('black');
+        textSize(50);
+        
 
     }
 
