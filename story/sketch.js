@@ -223,7 +223,7 @@ function draw() {
         text("Jared and party cat begin to party and Dance in the pink room" , 100, 400);
         
     } else if (scene == "classroom") {
-        background('AliceBlue');
+        background('green');
         
         //Character 1: Jared
         fill('tan');
