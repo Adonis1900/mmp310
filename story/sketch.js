@@ -219,7 +219,8 @@ function draw() {
         
         fill("white");
         textSize(50);
-        text("hey",300,250);
+        text("Lets Party in the pink room!",200,250);
+        text("Jared and party cat begin to party and Dance in the pink room" , 100, 400);
         
     } else if (scene == "classroom") {
         background('AliceBlue');
