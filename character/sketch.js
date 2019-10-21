@@ -14,7 +14,7 @@ function setup() {
    
     character();
 
-    createP("catX");
+    createP("Cat color");
 
     var greySlider = createSlider (0,255, catX, catY);
     greySlider.input(updateGrey)
@@ -25,7 +25,7 @@ function setup() {
     
 }
 function updateGrey(){
-    catX=this.value();
+    catX = this.value();
     character();
     
 }
