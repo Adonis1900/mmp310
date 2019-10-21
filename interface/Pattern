@@ -1,0 +1,18 @@
+
+
+var num = 10;
+var nameInput;
+
+function setup()
+createCanvas(windowwidth, 600);
+pattern();
+
+var button = createButton("Generate Pattern")
+button.mouseClicked(pattern);
+
+nameInput = createInput ("Name the file")
+var saveButton = createbutton("Save Image")
+saveButton.mouseClicked(saveImage);
+
+createP("Change Pattern");
+var numSlider = create
